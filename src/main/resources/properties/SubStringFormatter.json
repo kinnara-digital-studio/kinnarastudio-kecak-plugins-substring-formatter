@@ -1,0 +1,38 @@
+[
+  {
+    title : '@@subStringFormatter.title@@',
+    properties : [
+      {
+        label : '@@subStringFormatter.pattern@@',
+        type : 'header'
+      },
+      {
+        name : 'regex',
+        label : '@@subStringFormatter.regex@@',
+        type : 'textfield'
+      },
+      {
+        name : 'sequence',
+        label : '@@subStringFormatter.sequence@@',
+        description : '@@subStringFormatter.sequence.desc@@',
+        type : 'textfield'
+      },
+      {
+        label : '@@subStringFormatter.index@@',
+        type : 'header'
+      },
+      {
+        name : 'start',
+        label : '@@subStringFormatter.start@@',
+        description : '@@subStringFormatter.start.desc@@',
+        type : 'textfield'
+      },
+      {
+        name : 'end',
+        label : '@@subStringFormatter.end@@',
+        description : '@@subStringFormatter.end.desc@@',
+        type : 'textfield'
+      }
+    ]
+  }
+]
