@@ -15,6 +15,8 @@ public class Activator implements BundleActivator {
 
         //Register plugin here
         registrationList.add(context.registerService(SubStringFormatter.class.getName(), new SubStringFormatter(), null));
+//        registrationList.add(context.registerService(ConcatenationFormatter.class.getName(), new ConcatenationFormatter(), null));
+//        registrationList.add(context.registerService(FreeTextFormatter.class.getName(), new FreeTextFormatter(), null));
     }
 
     public void stop(BundleContext context) {

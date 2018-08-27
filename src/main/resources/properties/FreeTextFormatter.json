@@ -1,0 +1,13 @@
+[
+  {
+    title : '@@freeTextFormatter.title@@',
+    properties : [
+      {
+        name : 'text',
+        label : '@@freeTextFormatter.text@@',
+        type : 'textfield',
+        description : '@@freeTextFormatter.text.desc@@'
+      }
+    ]
+  }
+]
