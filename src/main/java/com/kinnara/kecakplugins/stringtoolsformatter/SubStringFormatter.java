@@ -1,4 +1,4 @@
-package com.kinnara.kecakplugins.substringformatter;
+package com.kinnara.kecakplugins.stringtoolsformatter;
 
 import org.joget.apps.app.service.AppPluginUtil;
 import org.joget.apps.app.service.AppUtil;

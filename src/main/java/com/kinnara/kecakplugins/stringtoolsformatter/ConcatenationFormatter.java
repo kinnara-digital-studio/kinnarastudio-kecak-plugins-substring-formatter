@@ -1,6 +1,5 @@
-package com.kinnara.kecakplugins.substringformatter;
+package com.kinnara.kecakplugins.stringtoolsformatter;
 
-import jdk.internal.jline.internal.Nullable;
 import org.joget.apps.app.model.AppDefinition;
 import org.joget.apps.app.service.AppPluginUtil;
 import org.joget.apps.app.service.AppUtil;
@@ -11,6 +10,7 @@ import org.joget.apps.datalist.model.DataListColumnFormatDefault;
 import org.joget.plugin.base.Plugin;
 import org.joget.plugin.base.PluginManager;
 
+import javax.annotation.Nullable;
 import java.util.Map;
 
 public class ConcatenationFormatter extends DataListColumnFormatDefault {
