@@ -1,0 +1,25 @@
+[
+  {
+    title : '@@stringReplaceFormatter.title@@',
+    properties : [
+      {
+        label : '@@stringReplaceFormatter.pattern@@',
+        type : 'header'
+      },
+      {
+        name : 'regex',
+        label : '@@stringReplaceFormatter.regex@@',
+        type : 'textfield'
+      },
+      {
+        label : '@@stringReplaceFormatter.replacement@@',
+        type : 'header'
+      },
+      {
+        name : 'replaceWith',
+        label : '@@stringReplaceFormatter.replaceWith@@',
+        type : 'textfield'
+      }
+    ]
+  }
+]
