@@ -53,7 +53,7 @@ public class SubStringFormatter extends DataListColumnFormatDefault {
                 return m.group();
         }
 
-        return value;
+        return "";
     }
 
     @Override
