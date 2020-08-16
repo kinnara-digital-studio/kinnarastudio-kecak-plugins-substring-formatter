@@ -40,7 +40,7 @@ public class SubStringFormatter extends DataListColumnFormatDefault {
     private String byPattern(String value) {
         int sequence;
         try {
-            sequence = Integer.valueOf(getPropertyString("sequence"));
+            sequence = Integer.parseInt(getPropertyString("sequence"));
         }catch (NumberFormatException e) {
             sequence = 0;
         }
