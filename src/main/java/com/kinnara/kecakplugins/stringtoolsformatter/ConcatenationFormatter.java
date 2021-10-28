@@ -19,8 +19,9 @@ public class ConcatenationFormatter extends DataListColumnFormatDefault {
         AppDefinition appDefinition = AppUtil.getCurrentAppDefinition();
         DataListColumnFormat formatter1 = getPluginFormatter("string1");
         DataListColumnFormat formatter2 = getPluginFormatter("string2");
+        final String delimiter = AppUtil.processHashVariable(getPropertyString("delimiter"), null, null, null);
         return (formatter1 == null ? "" : formatter1.format(dataList, column, row, value))
-                + AppUtil.processHashVariable(getPropertyString("delimiter"), null, null, null, appDefinition)
+                + (delimiter.isEmpty() ? " " : delimiter)
                 + (formatter2 == null ? "" : formatter2.format(dataList, column, row, value));
     }
 
