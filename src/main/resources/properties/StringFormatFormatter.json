@@ -1,0 +1,54 @@
+[
+  {
+    "title" : "@@stringFormatFormatter.title@@",
+    "properties" : [
+      {
+        "name" : "format",
+        "label" : "@@stringFormatFormatter.format@@",
+        "type" : "textfield"
+      },
+      {
+        "name" : "arguments",
+        "label" : "@@stringFormatFormatter.arguments@@",
+        "type" : "grid",
+        "columns": [
+          {
+            "key": "dataType",
+            "label": "Type",
+            "options": [
+              {
+                "value": "INTEGER",
+                "label": "Int"
+              },
+              {
+                "value": "INTEGER",
+                "label": "Integer"
+              },
+              {
+                "value": "LONG",
+                "label": "Long"
+              },
+              {
+                "value": "FLOAT",
+                "label": "Float"
+              },
+              {
+                "value": "DOUBLE",
+                "label": "Double"
+              },
+              {
+                "value": "STRING",
+                "label": "String"
+              }
+            ]
+          },
+          {
+            "key": "value",
+            "label": "Value",
+            "required": "true"
+          }
+        ]
+      }
+    ]
+  }
+]

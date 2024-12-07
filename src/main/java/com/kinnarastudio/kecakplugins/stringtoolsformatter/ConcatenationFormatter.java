@@ -22,7 +22,7 @@ public class ConcatenationFormatter extends DataListColumnFormatDefault {
         DataListColumnFormat formatter2 = getPluginFormatter("string2");
         final String delimiter = AppUtil.processHashVariable(getPropertyString("delimiter"), null, null, null);
         return (formatter1 == null ? "" : formatter1.format(dataList, column, row, value))
-                + (delimiter.isEmpty() ? " " : delimiter)
+                + (delimiter.isEmpty() ? "" : delimiter)
                 + (formatter2 == null ? "" : formatter2.format(dataList, column, row, value));
     }
 
