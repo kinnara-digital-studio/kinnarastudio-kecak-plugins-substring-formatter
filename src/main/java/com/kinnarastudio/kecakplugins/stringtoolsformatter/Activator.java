@@ -1,4 +1,4 @@
-package com.kinnara.kecakplugins.stringtoolsformatter;
+package com.kinnarastudio.kecakplugins.stringtoolsformatter;
 
 import java.util.ArrayList;
 import java.util.Collection;

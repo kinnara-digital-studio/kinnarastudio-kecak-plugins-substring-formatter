@@ -1,4 +1,4 @@
-package com.kinnara.kecakplugins.stringtoolsformatter;
+package com.kinnarastudio.kecakplugins.stringtoolsformatter;
 
 import org.joget.apps.app.model.AppDefinition;
 import org.joget.apps.app.service.AppPluginUtil;
@@ -12,6 +12,7 @@ import org.joget.plugin.base.PluginManager;
 
 import javax.annotation.Nullable;
 import java.util.Map;
+import java.util.ResourceBundle;
 
 public class ConcatenationFormatter extends DataListColumnFormatDefault {
     @Override
@@ -46,7 +47,10 @@ public class ConcatenationFormatter extends DataListColumnFormatDefault {
 
     @Override
     public String getVersion() {
-        return getClass().getPackage().getImplementationVersion();
+        PluginManager pluginManager = (PluginManager) AppUtil.getApplicationContext().getBean("pluginManager");
+        ResourceBundle resourceBundle = pluginManager.getPluginMessageBundle(getClassName(), "/messages/BuildNumber");
+        String buildNumber = resourceBundle.getString("buildNumber");
+        return buildNumber;
     }
 
     @Override

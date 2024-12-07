@@ -1,10 +1,13 @@
-package com.kinnara.kecakplugins.stringtoolsformatter;
+package com.kinnarastudio.kecakplugins.stringtoolsformatter;
 
 import org.joget.apps.app.service.AppPluginUtil;
 import org.joget.apps.app.service.AppUtil;
 import org.joget.apps.datalist.model.DataList;
 import org.joget.apps.datalist.model.DataListColumn;
 import org.joget.apps.datalist.model.DataListColumnFormatDefault;
+import org.joget.plugin.base.PluginManager;
+
+import java.util.ResourceBundle;
 
 public class FreeTextFormatter extends DataListColumnFormatDefault {
     @Override
@@ -21,7 +24,10 @@ public class FreeTextFormatter extends DataListColumnFormatDefault {
 
     @Override
     public String getVersion() {
-        return getClass().getPackage().getImplementationVersion();
+        PluginManager pluginManager = (PluginManager) AppUtil.getApplicationContext().getBean("pluginManager");
+        ResourceBundle resourceBundle = pluginManager.getPluginMessageBundle(getClassName(), "/messages/BuildNumber");
+        String buildNumber = resourceBundle.getString("buildNumber");
+        return buildNumber;
     }
 
     @Override
